@@ -1,0 +1,16 @@
+server:
+  servlet:
+    context-path: /demo
+
+management:
+  server:
+    port: 8081
+    base-path: /
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+pokemon:
+  base-url: https://pokeapi.co/api/v2/
+
