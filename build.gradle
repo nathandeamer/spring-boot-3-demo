@@ -42,14 +42,13 @@ dependencyManagement {
 	}
 }
 
+// There is a bug in the build pack which needs to be updated to exclude netty config.
+// https://github.com/paketo-buildpacks/native-image/pull/204
 tasks.named('bootBuildImage') {
 	buildpacks =  ['gcr.io/paketo-buildpacks/bellsoft-liberica:9.9.0-ea', 'gcr.io/paketo-buildpacks/java-native-image']
+	//environment['BP_NATIVE_IMAGE_BUILD_ARGUMENTS'] = '--verbose'
 }
 
 tasks.named('test') {
 	useJUnitPlatform()
-}
-
-tasks.named('bootBuildImage') {
-	//environment['BP_NATIVE_IMAGE_BUILD_ARGUMENTS'] = '--verbose'
 }
