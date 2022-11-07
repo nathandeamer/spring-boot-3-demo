@@ -1,5 +1,5 @@
 plugins {
-	id 'org.springframework.boot' version '3.0.0-RC1'
+	id 'org.springframework.boot' version '3.0.0-RC1' // https://docs.spring.io/spring-boot/docs/3.0.0-RC1/reference/html/dependency-versions.html#appendix.dependency-versions
 	id 'io.spring.dependency-management' version '1.1.0'
 	id 'org.graalvm.buildtools.native' version '0.9.16'
 	id 'java'
@@ -21,13 +21,14 @@ repositories {
 }
 
 ext {
-	set('springCloudVersion', "2022.0.0-RC1")
+	set('springCloudVersion', "2022.0.0-RC1") // https://github.com/spring-cloud/spring-cloud-release/wiki/Spring-Cloud-2022.0-Release-Notes
 }
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
+	implementation 'io.micrometer:micrometer-registry-prometheus'
 
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'

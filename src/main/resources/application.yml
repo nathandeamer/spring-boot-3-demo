@@ -1,3 +1,7 @@
+spring:
+  application:
+    name: demo
+
 server:
   servlet:
     context-path: /demo
@@ -14,3 +18,9 @@ management:
 pokemon:
   base-url: https://pokeapi.co/api/v2/
 
+owner: nathandeamer
+
+# Override logging level for test
+logging:
+  level:
+    com.nathandeamer.demo.pokemon.PokemonController: debug
