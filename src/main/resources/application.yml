@@ -1,6 +1,8 @@
 spring:
   application:
     name: demo
+  main:
+    banner-mode: off
 
 server:
   servlet:
@@ -19,8 +21,3 @@ pokemon:
   base-url: https://pokeapi.co/api/v2/
 
 owner: nathandeamer
-
-# Override logging level for test
-logging:
-  level:
-    com.nathandeamer.demo.pokemon.PokemonController: debug

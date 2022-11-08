@@ -30,6 +30,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
 	implementation 'io.micrometer:micrometer-registry-prometheus'
 
+	implementation 'co.elastic.logging:logback-ecs-encoder:1.5.0'
+
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 
