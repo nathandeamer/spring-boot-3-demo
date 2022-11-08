@@ -1,5 +1,5 @@
 plugins {
-	id 'org.springframework.boot' version '3.0.0-RC1' // https://docs.spring.io/spring-boot/docs/3.0.0-RC1/reference/html/dependency-versions.html#appendix.dependency-versions
+	id 'org.springframework.boot' version '3.0.0-RC1'
 	id 'io.spring.dependency-management' version '1.1.0'
 	id 'org.graalvm.buildtools.native' version '0.9.16'
 	id 'java'
@@ -25,10 +25,15 @@ ext {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-actuator'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.boot:spring-boot-starter-webflux'
-	implementation 'io.micrometer:micrometer-registry-prometheus'
+	// Spring managed dependencies: https://docs.spring.io/spring-boot/docs/3.0.0-RC1/reference/html/dependency-versions.html#appendix.dependency-versions
+	implementation 'org.springframework.boot:spring-boot-starter-actuator' // Managed dependency
+	implementation 'org.springframework.boot:spring-boot-starter-web' // Managed dependency
+	implementation 'org.springframework.boot:spring-boot-starter-webflux' // Managed dependency
+	implementation 'io.micrometer:micrometer-registry-prometheus' // Managed dependency
+
+	// Not Spring managed dependencies (so version needs to be set)
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.0-RC1' //https://springdoc.org/v2/
+	implementation 'org.springdoc:springdoc-openapi-starter-common:2.0.0-RC1' // For annotations.
 
 	implementation 'co.elastic.logging:logback-ecs-encoder:1.5.0'
 
