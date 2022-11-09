@@ -1,8 +1,10 @@
+# Spring Boot 3.0.0-RC1
+https://docs.spring.io/spring-boot/docs/3.0.0-RC1/reference/htmlsingle/
 
 ## Pre-requisites
 Depending on how you would like to build and run you will need either:
 - GraalVM (https://bell-sw.com/pages/downloads/native-image-kit/#/nik-22-17)
-- Docker
+- Docker (https://rancherdesktop.io/)
 
 ## How to build and run (GraalVM)
 `./gradlew nativeRun`  
@@ -24,5 +26,4 @@ or`./gradlew nativeCompile` and then run the executable `./build/native/nativeCo
 | Micrometer - Tracing      |               | ❓            |
 | Spring Data               |               | ❓            |
 | Spring Kafka              |               | ❓            |
-
 

@@ -1,4 +1,4 @@
-package com.nathandeamer.demo.config;
+package com.nathandeamer.demo.shared.config;
 
 import io.micrometer.core.instrument.MeterRegistry;
 import lombok.RequiredArgsConstructor;
