@@ -1,5 +1,6 @@
 package com.nathandeamer.demo.pokemon;
 
+import io.micrometer.observation.annotation.Observed;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -22,6 +23,7 @@ public class PokemonController {
 
     private final PokemonService pokemonService;
 
+    //@Observed(name="get_pokemon_by_name", contextualName = "get_pokemon_by_name")
     @Operation(summary = "Get a Pokemon by Name", description = "Get a Pokemon by Name")
     @GetMapping(path = "/pokemon", produces = { "application/json" })
     public PokemonDTO get(@Parameter(description = "Name of pokemon", required = true) @RequestParam String name) {

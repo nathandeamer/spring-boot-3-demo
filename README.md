@@ -1,5 +1,5 @@
-# Spring Boot 3.0.0-RC1
-https://docs.spring.io/spring-boot/docs/3.0.0-RC1/reference/htmlsingle/
+# Spring Boot 3.0.0-RC2
+https://docs.spring.io/spring-boot/docs/3.0.0-RC2/reference/htmlsingle/
 
 ## Pre-requisites
 Depending on how you would like to build and run you will need either:
