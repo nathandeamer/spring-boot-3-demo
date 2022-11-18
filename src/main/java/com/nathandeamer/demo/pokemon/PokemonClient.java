@@ -2,6 +2,7 @@ package com.nathandeamer.demo.pokemon;
 
 import com.nathandeamer.demo.shared.exceptions.ClientException;
 import com.nathandeamer.demo.shared.exceptions.ServerException;
+import io.micrometer.observation.annotation.Observed;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
