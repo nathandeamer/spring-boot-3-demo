@@ -27,3 +27,15 @@ or`./gradlew nativeCompile` and then run the executable `./build/native/nativeCo
 | Spring Data               |               | ❓            |
 | Spring Kafka              |               | ❓            |
 
+### Helpful links  
+https://spring.io/blog/2022/05/24/preparing-for-spring-boot-3-0  
+https://docs.spring.io/spring-boot/docs/current/reference/html/  
+https://spring.io/blog/2022/10/12/observability-with-spring-boot-3  
+https://github.com/marcingrzejszczak/observability-boot-blog-post  
+https://micrometer.io/docs/observation (https://micrometer.io/docs/observation#_using_annotations_with_observed)  
+https://github.com/micrometer-metrics/micrometer/wiki/Migrating-to-new-1.10.0-Observation-API  
+https://github.com/micrometer-metrics/micrometer/wiki/1.10-Migration-Guide  
+https://micrometer-metrics.slack.com/archives/C030GTHE4P6/p1668599152900719  
+https://springbootlearning.medium.com/using-micrometer-to-trace-your-spring-boot-app-1fe6ff9982ae  
+
+
