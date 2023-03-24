@@ -20,10 +20,11 @@ repositories {
 }
 
 dependencies {
-	// Spring managed dependencies: https://docs.spring.io/spring-boot/docs/3.0.0-RC1/reference/html/dependency-versions.html#appendix.dependency-versions
+	// Spring managed dependencies: https://docs.spring.io/spring-boot/docs/3.0.4/reference/html/dependency-versions.html#appendix.dependency-versions
 	implementation 'org.springframework.boot:spring-boot-starter-actuator' // Managed dependency
 	implementation 'org.springframework.boot:spring-boot-starter-web' // Managed dependency
 	implementation 'org.springframework.boot:spring-boot-starter-webflux' // Managed dependency
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
 
 	runtimeOnly 'io.micrometer:micrometer-registry-prometheus' // Managed dependency
 
