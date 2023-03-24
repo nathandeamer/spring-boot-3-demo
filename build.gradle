@@ -19,10 +19,6 @@ repositories {
 	mavenCentral()
 }
 
-//ext {
-//	set('springCloudVersion', "2022.0.0-RC1") // https://github.com/spring-cloud/spring-cloud-release/wiki/Spring-Cloud-2022.0-Release-Notes
-//}
-
 dependencies {
 	// Spring managed dependencies: https://docs.spring.io/spring-boot/docs/3.0.0-RC1/reference/html/dependency-versions.html#appendix.dependency-versions
 	implementation 'org.springframework.boot:spring-boot-starter-actuator' // Managed dependency
@@ -33,7 +29,6 @@ dependencies {
 
 	// Not Spring managed dependencies (so version needs to be set)
 	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.4' //https://springdoc.org/v2/
-	//implementation 'org.springdoc:springdoc-openapi-starter-common:2.0.0-RC1' // For annotations.
 
 	implementation 'co.elastic.logging:logback-ecs-encoder:1.5.0'
 
@@ -43,16 +38,10 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
-//dependencyManagement {
-//	imports {
-//		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
-//	}
-//}
 
-//tasks.named('bootBuildImage') {
-//	buildpacks =  ['gcr.io/paketo-buildpacks/bellsoft-liberica:9.10.0', 'gcr.io/paketo-buildpacks/java-native-image:7.37.0']
-//	//environment['BP_NATIVE_IMAGE_BUILD_ARGUMENTS'] = '--verbose'
-//}
+tasks.named('bootBuildImage') {
+	//environment['BP_NATIVE_IMAGE_BUILD_ARGUMENTS'] = '--verbose'
+}
 
 tasks.named('test') {
 	useJUnitPlatform()

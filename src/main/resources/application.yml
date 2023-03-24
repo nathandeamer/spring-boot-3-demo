@@ -21,3 +21,8 @@ pokemon:
   base-url: https://pokeapi.co/api/v2/
 
 owner: nathandeamer
+
+springdoc:
+  enable-native-support: true
+  default-produces-media-type: application/json
+  default-consumes-media-type: application/json

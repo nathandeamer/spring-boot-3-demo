@@ -15,9 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 @RequestMapping(path = "/api/v1")
 @Tag(name = "Pokemon", description = "The Pokemon API")
-/*
-    WebClient example - Calling a third party API.
- */
 public class PokemonController {
 
     private final PokemonService pokemonService;

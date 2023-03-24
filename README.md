@@ -1,5 +1,5 @@
-# Spring Boot 3.0.0-RC1
-https://docs.spring.io/spring-boot/docs/3.0.0-RC1/reference/htmlsingle/
+# Spring Boot 3.0.4
+https://docs.spring.io/spring-boot/docs/3.0.4/reference/htmlsingle/
 
 ## Pre-requisites
 Depending on how you would like to build and run you will need either:
@@ -18,11 +18,10 @@ or`./gradlew nativeCompile` and then run the executable `./build/native/nativeCo
 
 | Library   	            | Version   	| Compatible  	| Notes   	
 |---	                    |---	        |---	        |---		
-| Open Feign                |4.0.0-RC1  	| ❌  	        |https://github.com/spring-cloud/spring-cloud-openfeign/issues/742
-| Spring Webflux   	        |6.0.0-RC2   	| ✅	        |
+| Spring Webflux   	        |6.0.6  	    | ✅	        |
 | ECS Logging               |1.5.0          | ✅            |
-| Spring Docs               |2.0.0-RC1      | ✅            | https://github.com/springdoc/springdoc-openapi/issues/1284#issuecomment-1023445755 <p/> https://github.com/springdoc/springdoc-openapi-demos/tree/2.x/demo-spring-boot-3-webmvc
-| Micrometer - Prometheus   |1.10.0-RC1     | ✅            |
+| Spring Docs               |2.0.4          | ✅            | 
+| Micrometer - Prometheus   |1.10.4         | ✅            |
 | Micrometer - Tracing      |               | ❓            |
 | Spring Data               |               | ❓            |
 | Spring Kafka              |               | ❓            |
