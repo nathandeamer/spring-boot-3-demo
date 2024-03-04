@@ -7,7 +7,7 @@ Depending on how you would like to build and run you will need either:
 - Docker (https://rancherdesktop.io/)
 
 ## How to build and run (GraalVM)
-`./gradlew nativeRun`  
+ `./gradlew nativeRun`  
 or`./gradlew nativeCompile` and then run the executable `./build/native/nativeCompile/demo`   
 
 ## How to build and run (Docker)
